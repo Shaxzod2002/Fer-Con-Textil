@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "test": "Наши продукты",
+        "text": "Гофрокартоны",
+        "order": "Заказать",
+        "img": "./image/products/1.png"
+    },
+    {
+        "id": 2,
+        "text": "Гофрокартоны",
+        "order": "Заказать",
+        "img": "./image/products/2.png"
+    },
+    {
+        "id": 3,
+        "text": "Гофрокартоны",
+        "order": "Заказать",
+        "img": "./image/products/3.png"
+    },
+    {
+        "id": 4,
+        "text": "Гофрокартоны",
+        "order": "Заказать",
+        "img": "./image/products/4.png"
+    }
+]
