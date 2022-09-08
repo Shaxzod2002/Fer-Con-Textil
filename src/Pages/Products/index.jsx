@@ -16,9 +16,28 @@ export default function Products() {
 
     return (
         <>
-            {products.map((post) => (
-                <h1>{post.test}</h1>
-            ))}
+            <div className="products row">
+                <h1 className="title-page">Наши продукты</h1>
+                <div className="products-gallary">
+                    {products.map((post) => (
+                        <div className="products-gallary-box">
+                            <div className="products-gallary-box-head">
+                                <img src={post.img} alt="image" />
+                            </div>
+                            <div className="products-gallary-box-body">
+                                <div className="top">
+
+                                </div>
+                                <div className="bottom text-center">
+                                    <h3 className="text">{post.text}</h3>
+                                    <button>{post.order}</button>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+
+                </div>
+            </div>
         </>
     )
 }

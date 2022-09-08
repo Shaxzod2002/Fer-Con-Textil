@@ -1,1 +1,44 @@
-/*# sourceMappingURL=main.css.map */
+.contact {
+  padding: 50px;
+  min-height: 80vh;
+  z-index: 2;
+  border-radius: 0 0 40px 40px;
+  background: rgb(255, 255, 255);
+  -webkit-border-radius: 0 0 40px 40px;
+  -moz-border-radius: 0 0 40px 40px;
+  -ms-border-radius: 0 0 40px 40px;
+  -o-border-radius: 0 0 40px 40px;
+}
+.contact .contact-page .left {
+  width: 50%;
+  padding-left: 10%;
+}
+.contact .contact-page .left .option {
+  margin-top: 100px;
+}
+.contact .contact-page .left .option .location-icon {
+  font-size: 70px !important;
+}
+.contact .contact-page .left .option .icon {
+  margin-right: 30px;
+  font-size: 40px;
+}
+.contact .contact-page .left .option .delivery-icon {
+  font-size: 60px;
+}
+.contact .contact-page .left .option p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.contact .contact-page .right {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .contact .contact-page .left, .contact .contact-page .right {
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

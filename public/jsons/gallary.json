@@ -1,8 +1,14 @@
 [
     {
-        "tile": "Фотогалерея",
-        "img1": "./image/gallary/1.png",
-        "img2": "./image/gallary/2.png",
-        "img3": "./image/gallary/3.png"
+        "id": 1,
+        "img": "./image/gallary/1.png"
+    },
+    {
+        "id": 2,
+        "img": "./image/gallary/2.png"
+    },
+    {
+        "id": 3,
+        "img": "./image/gallary/3.png"
     }
 ]

@@ -1,6 +1,14 @@
 [
     {
         "title": "Fer Kon Textile",
-        "paragraph": "Производит высоко качественные гофрокартоны гофроящики и конусы."
+        "paragraph": "Производит высоко качественные гофрокартоны гофроящики и конусы.",
+        "youtube-light": "./image/footer/youtube-light.png",
+        "telegram-light": "./image/footer/telegram-light.png",
+        "facebook-light": "./image/footer/facebook-light.png",
+        "instagram-light": "./image/footer/instagram-light.png",
+        "youtube-orange": "./image/footer/youtube-orange.png",
+        "telegram-orange": "./image/footer/telegram-orange.png",
+        "facebook-orange": "./image/footer/facebook-orange.png",
+        "instagram-orange": "./image/footer/instagram-orange.png"
     }
 ]

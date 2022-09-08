@@ -1,0 +1,77 @@
+nav {
+  background: rgba(85, 85, 85, 0.5);
+  min-height: 80px;
+}
+nav .brand {
+  width: 30%;
+}
+nav .brand .bars-icon {
+  display: none;
+}
+nav ul {
+  width: 70%;
+  height: 100%;
+  display: flex;
+}
+nav ul li {
+  position: relative;
+}
+nav ul li::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  transition: all 0.3s linear;
+  background: #ff7d4e;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+nav ul li:hover::before {
+  width: 100%;
+}
+nav ul li a {
+  transition: all 0.3s linear;
+  color: #fff;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+nav ul li:hover > a {
+  color: #ff7d4e;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  nav .brand {
+    padding-top: 20px;
+    width: 100%;
+    justify-content: space-around !important;
+  }
+  nav .brand .bars-icon {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+  }
+  nav .brand .bars-icon:hover {
+    color: #ff7d4e;
+  }
+  nav ul {
+    width: 100%;
+    padding: 30px 0;
+    flex-direction: column;
+    row-gap: 30px;
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */

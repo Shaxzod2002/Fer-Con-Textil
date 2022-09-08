@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './main.css';
 import axios from "axios";
+import Navbar from "./Navbar";
 const HeaderJson = "./jsons/header.json";
 
 export default function Header() {
@@ -16,11 +17,21 @@ export default function Header() {
 
     return (
         <>
-            {header.map((post) => (
-                <div>
-                    <h1>{post.test}</h1>
+            <header className="row">
+                <div className="theme">
+                    <Navbar />
+                    {header.map((post) => (
+                        <div className="body">
+                            <h1 className="title">
+                                {post.title}
+                            </h1>
+                            <p className="paragraph">
+                                {post.paragraph}
+                            </p>
+                        </div>
+                    ))}
                 </div>
-            ))}
+            </header>
         </>
     )
 }

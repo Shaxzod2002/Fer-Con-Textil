@@ -2,8 +2,6 @@
     {
         "title": "ООО “Fer Kon Textile”",
         "paragraph": "Производит высоко качественные гофрокартоны гофроящики и конусы.",
-        "two": "./image/header/1.png",
-        "one": "./image/header/2.png",
-        "three": "./image/header/3.png"
+        "background": "./image/header/header.png"
     }
 ]

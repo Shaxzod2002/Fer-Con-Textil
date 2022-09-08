@@ -1,1 +1,97 @@
-/*# sourceMappingURL=main.css.map */
+.products {
+  min-height: 100vh;
+  background: #F0F0F0;
+  display: flex;
+  justify-content: center;
+  border-radius: 0px 0px 40px 40px;
+  -webkit-border-radius: 0px 0px 40px 40px;
+  -moz-border-radius: 0px 0px 40px 40px;
+  -ms-border-radius: 0px 0px 40px 40px;
+  -o-border-radius: 0px 0px 40px 40px;
+}
+.products .title-page {
+  width: 90%;
+  margin: 50px 0 40px 10%;
+}
+.products .title-page::before {
+  left: 0;
+}
+@media (max-width: 768px) {
+  .products .title-page {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .products .title-page::before {
+    top: 0;
+    height: 100%;
+    left: 0;
+  }
+}
+.products .products-gallary {
+  width: 82%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.products .products-gallary .products-gallary-box {
+  height: auto;
+}
+.products .products-gallary .products-gallary-box-head {
+  display: flex;
+}
+.products .products-gallary .products-gallary-box-body {
+  position: relative;
+  top: -100px;
+  width: 100%;
+  min-height: 100px;
+  padding: 0 0 20px 0;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.products .products-gallary .products-gallary-box-body .top {
+  height: 20px;
+  background: rgb(255, 125, 78);
+}
+.products .products-gallary .products-gallary-box-body .bottom .text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+.products .products-gallary .products-gallary-box-body .bottom .text::before, .products .products-gallary .products-gallary-box-body .bottom .text::after {
+  position: relative;
+  top: 5px;
+  content: "*";
+}
+.products .products-gallary .products-gallary-box-body .bottom button {
+  height: 42px;
+  width: 231px;
+  border-radius: 5px;
+  border: 1px solid #8B8B8B;
+  border-radius: 5px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #8B8B8B;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.products .products-gallary .products-gallary-box-body .bottom button:hover {
+  background: #ff7d4e;
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */

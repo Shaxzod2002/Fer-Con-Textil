@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from "../Pages/Navbar";
 import Header from "../Pages/Header";
 import About from "../Pages/About";
 import Products from "../Pages/Products";
@@ -11,7 +10,6 @@ import Footer from "../Pages/Footer";
 export default function Fercontextil() {
     return (
         <>
-            <Navbar />
             <Header />
             <About />
             <Products />

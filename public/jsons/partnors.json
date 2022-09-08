@@ -1,6 +1,10 @@
 [
     {
         "title": "Партнеры",
+        "ruxsorName": "Ruxsor",
+        "goldName": "Gold",
+        "ruxsorRuxsorName": "Ruxsor Radio",
+        "madadName": "Madad Bank",
         "ruxsor": "image/partnors/ruxsor.png",
         "gold": "image/partnors/gold.png",
         "ruxsorRadio": "image/partnors/ruxsor-radio.png",

@@ -1,0 +1,202 @@
+.partners {
+    height: 418px;
+    background: rgba(240, 240, 240, 1);
+    border-radius: 0 0 40px 40px;
+    -webkit-border-radius: 0 0 40px 40px;
+    -moz-border-radius: 0 0 40px 40px;
+    -ms-border-radius: 0 0 40px 40px;
+    -o-border-radius: 0 0 40px 40px;
+
+    .title-page {
+        margin: 50px 0 0 10%;
+    }
+
+    .partners-swiper {
+        width: 90%;
+        margin: 0 auto;
+        height: 300px;
+    }
+
+    .partors-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-button-prev {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 2px solid #555555;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+
+        &::after {
+            font-size: 30px;
+            color: #555555;
+        }
+
+        &:active {
+            border: 2px solid #ff7d4e;
+            font-weight: 900;
+        }
+
+        &:active::after {
+            color: #ff7d4e;
+        }
+    }
+
+    .swiper-button-next {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 2px solid #555555;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+
+        &::after {
+            font-size: 30px;
+            color: #555555;
+            font-weight: 900;
+        }
+
+        &:active {
+            border: 2px solid #ff7d4e;
+        }
+
+        &:active::after {
+            color: #ff7d4e;
+        }
+    }
+}
+
+.partners-swiper-mobile {
+    display: none;
+}
+
+.partners-swiper-planete {
+    display: none;
+}
+
+@media screen and (max-width: 767.9px) {
+    .partners {
+        .title {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 400px;
+            display: flex;
+            flex-direction: column-reverse;
+            margin: 50px 0;
+
+            span {
+                position: relative;
+                top: -30px;
+                left: 0;
+                width: 26%;
+                height: 4px;
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 {
+                font-size: 22px !important;
+                margin-top: 0;
+                padding: 0;
+                text-align: center;
+            }
+        }
+
+        .swiper-button-prev {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            top: 50%;
+            border: 2px solid #555555;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            margin-left: -5px;
+
+            &::after {
+                color: #555555 !important;
+                font-weight: 900;
+            }
+
+            &:active::after {
+                color: #ff7d4e !important;
+            }
+        }
+
+        .swiper-button-next {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            top: 50%;
+            border: 2px solid #555555;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            margin-left: -5px;
+
+            &::after {
+                color: #555555 !important;
+                font-weight: 900;
+            }
+
+            &:active::after {
+                color: #ff7d4e !important;
+            }
+        }
+    }
+
+    .partners-swiper {
+        display: none;
+    }
+
+    .partners-swiper-mobile {
+        display: flex;
+
+        .swiper-button-prev {
+            &::after {
+                font-size: 20px;
+                color: #fff;
+            }
+        }
+
+        .swiper-button-next {
+            &::after {
+                font-size: 20px;
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.9px) {
+    .partners-swiper {
+        display: none;
+    }
+
+    .partners-swiper-planete {
+        display: flex;
+    }
+}

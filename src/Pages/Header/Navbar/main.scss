@@ -1,0 +1,89 @@
+nav {
+    background: rgba(85, 85, 85, 0.5);
+    min-height: 80px;
+
+    .brand {
+        width: 30%;
+
+        .bars-icon {
+            display: none;
+        }
+    }
+
+    ul {
+        width: 70%;
+        height: 100%;
+        display: flex;
+
+        li {
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: '';
+                width: 0;
+                top: 100%;
+                left: 0;
+                height: 2px;
+                transition: all .3s linear;
+                background: #ff7d4e;
+                -webkit-transition: all .3s linear;
+                -moz-transition: all .3s linear;
+                -ms-transition: all .3s linear;
+                -o-transition: all .3s linear;
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
+
+            a {
+                transition: all .3s linear;
+                color: #fff;
+                -webkit-transition: all .3s linear;
+                -moz-transition: all .3s linear;
+                -ms-transition: all .3s linear;
+                -o-transition: all .3s linear;
+            }
+
+            &:hover>a {
+                color: #ff7d4e;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+
+        .brand {
+            padding-top: 20px;
+            width: 100%;
+            justify-content: space-around !important;
+
+            .bars-icon {
+                color: #fff;
+                cursor: pointer;
+                display: block;
+                transition: all .3s linear;
+                -webkit-transition: all .3s linear;
+                -moz-transition: all .3s linear;
+                -ms-transition: all .3s linear;
+                -o-transition: all .3s linear;
+
+                &:hover {
+                    color: #ff7d4e;
+                }
+            }
+        }
+
+        ul {
+            width: 100%;
+            padding: 30px 0;
+            flex-direction: column;
+            row-gap: 30px;
+            display: none;
+        }
+    }
+}

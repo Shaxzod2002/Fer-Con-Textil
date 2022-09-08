@@ -5,6 +5,10 @@ const FooterJson = "./jsons/footer.json";
 
 export default function Footer() {
     const [footer, setFooter] = useState([]);
+    const [showYoutube, setYoutubeShow] = useState(false);
+    const [showTelegram, setTelegramShow] = useState(false);
+    const [showFacebook, setFacebookShow] = useState(false);
+    const [showInstagram, setInstagramShow] = useState(false);
 
     useEffect(() => {
         axios.get(FooterJson)
@@ -16,9 +20,58 @@ export default function Footer() {
 
     return (
         <>
-            {footer.map((post) => (
-                <h1>{post.test}</h1>
-            ))}
+            <footer className="row">
+                {footer.map((post) => (
+                    <div className="footer-page">
+                        <div className="left">
+                            <h4 className="title">{post.title}</h4>
+                            <p>{post.paragraph}</p>
+                        </div>
+                        <div className="right">
+                            <img
+                                onMouseMove={() => {
+                                setYoutubeShow(true)
+                                }}
+                                onMouseLeave={() => {
+                                    setYoutubeShow(false)
+                                }}
+                                src={!showYoutube ? post["youtube-light"] : post["youtube-orange"]}
+                                alt="youtube"
+                            />
+                            <img
+                                onMouseMove={() => {
+                                    setTelegramShow(true)
+                                }}
+                                onMouseLeave={() => {
+                                    setTelegramShow(false)
+                                }}
+                                src={!showTelegram ? post["telegram-light"] : post["telegram-orange"]}
+                                alt="telegram"
+                            />
+                            <img
+                                onMouseMove={() => {
+                                    setFacebookShow(true)
+                                }}
+                                onMouseLeave={() => {
+                                    setFacebookShow(false)
+                                }}
+                                src={!showFacebook ? post["facebook-light"] : post["facebook-orange"]}
+                                alt="facebook"
+                            />
+                            <img
+                                onMouseMove={() => {
+                                    setInstagramShow(true)
+                                }}
+                                onMouseLeave={() => {
+                                    setInstagramShow(false)
+                                }}
+                                src={!showInstagram ? post["instagram-light"] : post["instagram-orange"]}
+                                alt="instagram"
+                            />
+                        </div>
+                    </div>
+                ))}
+            </footer>
         </>
     )
 }

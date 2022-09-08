@@ -1,8 +1,11 @@
 [
     {
-        "test": "О hello",
+        "title": "О нас",
         "paragraph1": "Производит высоко качественные гофрокартоны, гофроящики и конусы.",
         "paragraph2": "Мы также перерабатываем некачественную и непригодную бумагу.",
-        "photo": "./image/about/photo.png"
+        "photo": "./image/about/photo.png",
+        "one": "./image/about/1.png",
+        "two": "./image/about/2.png",
+        "three": "./image/about/3.png"
     }
 ]

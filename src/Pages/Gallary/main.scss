@@ -1,0 +1,111 @@
+.gallary {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title-page {
+        position: absolute;
+        top: 50px;
+        left: 10%;
+    }
+
+    .prev,
+    .next {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        z-index: 2;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 2px solid #555555;
+        color: #555555;
+        font-size: 40px;
+        transition: all .3s linear;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+    }
+
+    .prev:hover,
+    .next:hover {
+        color: #ff7d4e;
+        border: 2px solid #ff7d4e;
+    }
+
+    .prev {
+        position: absolute;
+        left: 30px;
+        top: 55%;
+    }
+
+    .next {
+        position: absolute;
+        right: 30px;
+        top: 55%;
+    }
+
+    .gallary-image {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image:nth-child(1) {
+        margin-right: 500px;
+    }
+
+    .image:nth-child(2) {
+        position: absolute;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallary {
+        min-height: 50vh; // overflow: hidden;
+
+        .title-page {
+            font-size: 40px;
+        }
+
+        .prev,
+        .next {
+            top: 59%;
+            font-size: 30px;
+            width: 40px;
+            height: 40px;
+        }
+
+        .prev {
+            left: 5px;
+        }
+        .next {
+            right: 5px;
+        }
+        
+        .gallary-image {
+
+            .image {
+                margin: 0 !important;
+
+                img {
+                    width: 300px;
+                }
+            }
+
+            .image:nth-child(1),
+            .image:nth-child(3) {
+                display: none;
+            }
+        }
+    }
+}
