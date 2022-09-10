@@ -91,4 +91,9 @@
   .about .about-body {
     width: 100%;
   }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .about-body {
+    margin: 500px 0 40px 0 !important;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,5 @@
 .products {
-    min-height: 100vh;
+    min-height: 80vh;
     background: #F0F0F0;
     display: flex;
     justify-content: center;
@@ -30,13 +30,18 @@
     }
 
     .products-gallary {
-        width: 82%;
+        width: 100%;
         display: flex;
-        justify-content: space-between;
+        gap: 30px;
+        margin: 0 0 40px 0;
+        justify-content: center;
+        align-content: center;
         flex-wrap: wrap;
 
         .products-gallary-box {
-            height: auto;
+            margin: 0;
+            padding: 0;
+            height: 400px;
 
             &-head {
                 display: flex;
@@ -114,12 +119,5 @@
                 }
             }
         }
-    }
-}
-
-@media (max-width: 768px) {
-    .products-gallary {
-        column-gap: 20px;
-        justify-content: center !important;
     }
 }
