@@ -57,6 +57,12 @@
   height: 20px;
   background: rgb(255, 125, 78);
 }
+.products .products-gallary .products-gallary-box-body .bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .products .products-gallary .products-gallary-box-body .bottom .text {
   font-family: "Poppins";
   font-style: normal;
@@ -71,9 +77,12 @@
   top: 5px;
   content: "*";
 }
-.products .products-gallary .products-gallary-box-body .bottom button {
+.products .products-gallary .products-gallary-box-body .bottom a {
   height: 42px;
   width: 231px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px;
   border: 1px solid #8B8B8B;
   border-radius: 5px;
@@ -91,7 +100,14 @@
   -ms-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
 }
-.products .products-gallary .products-gallary-box-body .bottom button:hover {
+.products .products-gallary .products-gallary-box-body .bottom a:hover {
   background: #ff7d4e;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .products-gallary {
+    column-gap: 20px;
+    justify-content: center !important;
+  }
 }/*# sourceMappingURL=main.css.map */

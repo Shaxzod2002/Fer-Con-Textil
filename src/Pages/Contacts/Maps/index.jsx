@@ -12,35 +12,11 @@ const center = {
 };
 
 function MyComponent() {
-    const { isLoaded } = useJsApiLoader({
-        id: 'google-map-script',
-        googleMapsApiKey: "https://goo.gl/maps/Tzgm3paS1tAxpTCV9"
-    })
-
-    const [map, setMap] = React.useState(null)
-
-    const onLoad = React.useCallback(function callback(map) {
-        const bounds = new window.google.maps.LatLngBounds(center);
-        map.fitBounds(bounds);
-        setMap(map)
-    }, [])
-
-    const onUnmount = React.useCallback(function callback(map) {
-        setMap(null)
-    }, [])
-
-    return isLoaded ? (
-        <GoogleMap
-            mapContainerStyle={containerStyle}
-            center={center}
-            zoom={10}
-            onLoad={onLoad}
-            onUnmount={onUnmount}
-        >
-            { /* Child components, such as markers, info windows, etc. */}
-            <></>
-        </GoogleMap>
-    ) : <></>
+    return (
+        <div>
+            <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=fer%20kon%20tekstil&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+    )
 }
 
 export default React.memo(MyComponent)

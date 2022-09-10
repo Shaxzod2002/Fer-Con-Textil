@@ -9,9 +9,15 @@
   -ms-border-radius: 0 0 40px 40px;
   -o-border-radius: 0 0 40px 40px;
 }
+.contact .contact-page {
+  display: flex;
+}
 .contact .contact-page .left {
   width: 50%;
-  padding-left: 10%;
+  padding-left: 100px;
+}
+.contact .contact-page .left .title-page {
+  margin: 0;
 }
 .contact .contact-page .left .option {
   margin-top: 100px;
@@ -37,8 +43,40 @@
 .contact .contact-page .right {
   width: 50%;
 }
+
 @media (max-width: 768px) {
-  .contact .contact-page .left, .contact .contact-page .right {
+  .contact {
+    padding: 0;
+  }
+  .contact .contact-page {
+    flex-direction: column;
+  }
+  .contact .contact-page .left {
+    padding: 0 0 0 35px;
+  }
+  .contact .contact-page .left .title-page {
+    margin-top: 50px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .contact .contact-page .left .location-icon {
+    font-size: 70px !important;
+  }
+  .contact .contact-page .left .number-icon {
+    margin-right: 30px;
+    font-size: 30px !important;
+  }
+  .contact .contact-page .left .delivery-icon {
+    font-size: 60px;
+  }
+  .contact .contact-page .left p {
+    font-size: 20px !important;
+  }
+  .contact .contact-page .left,
+.contact .contact-page .right {
+    width: 100% !important;
+  }
+  .contact .contact-page .right iframe {
     width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

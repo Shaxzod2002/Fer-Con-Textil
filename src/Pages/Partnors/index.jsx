@@ -23,7 +23,7 @@ export default function Partnors() {
 
     return (
         <>
-            <div className="partnors row">
+            <div className="partnors row" id="partnor">
                 {partnors.map((post) => (
                     <div className="partners" id='partners'>
                         <h1 className="title-page">{post.title}</h1>

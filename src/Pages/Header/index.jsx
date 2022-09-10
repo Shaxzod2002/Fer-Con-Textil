@@ -17,7 +17,7 @@ export default function Header() {
 
     return (
         <>
-            <header className="row">
+            <header className="row" id="home">
                 <div className="theme">
                     <Navbar />
                     {header.map((post) => (

@@ -16,7 +16,7 @@ export default function Products() {
 
     return (
         <>
-            <div className="products row">
+            <div className="products row" id="product">
                 <h1 className="title-page">Наши продукты</h1>
                 <div className="products-gallary">
                     {products.map((post) => (
@@ -30,7 +30,7 @@ export default function Products() {
                                 </div>
                                 <div className="bottom text-center">
                                     <h3 className="text">{post.text}</h3>
-                                    <button>{post.order}</button>
+                                    <a href="?tell=null" className="text-decoration-none">{post.order}</a>
                                 </div>
                             </div>
                         </div>

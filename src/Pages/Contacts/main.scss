@@ -10,22 +10,30 @@
     -o-border-radius: 0 0 40px 40px;
 
     .contact-page {
+        display: flex;
+
         .left {
             width: 50%;
-            padding-left: 10%;
-
+            padding-left: 100px;
+            .title-page {
+                margin: 0;
+            }
             .option {
                 margin-top: 100px;
+
                 .location-icon {
                     font-size: 70px !important;
                 }
+
                 .icon {
                     margin-right: 30px;
                     font-size: 40px;
                 }
+
                 .delivery-icon {
                     font-size: 60px;
                 }
+
                 p {
                     font-family: 'Inter';
                     font-style: normal;
@@ -40,9 +48,51 @@
         .right {
             width: 50%;
         }
-        @media (max-width: 768px) {
-            .left, .right {
-                width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 0;
+
+        .contact-page {
+            flex-direction: column;
+
+            .left {
+                padding: 0 0 0 35px;
+
+                .title-page {
+                    margin-top: 50px;
+                    font-size: 40px;
+                    line-height: 40px;
+                }
+
+                .location-icon {
+                    font-size: 70px !important;
+                }
+
+                .number-icon {
+                    margin-right: 30px;
+                    font-size: 30px !important;
+                }
+
+                .delivery-icon {
+                    font-size: 60px;
+                }
+
+                p {
+                    font-size: 20px !important;
+                }
+            }
+
+            .left,
+            .right {
+                width: 100% !important;
+            }
+            .right {
+                iframe {
+                    width: 100%;
+                }
             }
         }
     }

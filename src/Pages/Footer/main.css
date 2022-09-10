@@ -1,5 +1,5 @@
 footer {
-  min-height: 40vh;
+  min-height: 20vh;
   z-index: 1;
   background: #555555;
 }
@@ -52,8 +52,32 @@ footer .footer-page .right img {
   cursor: pointer;
 }
 @media (max-width: 768px) {
+  footer .footer-page {
+    justify-content: center;
+    flex-direction: column;
+  }
   footer .footer-page .left,
 footer .footer-page .right {
     width: 100% !important;
+  }
+  footer .footer-page .left {
+    padding: 0;
+  }
+  footer .footer-page .left .title {
+    font-size: 22px;
+    width: 240px;
+  }
+  footer .footer-page .left .title::after {
+    left: 85%;
+  }
+  footer .footer-page .left p {
+    line-height: 16px;
+  }
+  footer .footer-page .right {
+    margin-top: -100px;
+    gap: 20px;
+  }
+  footer .footer-page .right img {
+    width: 30px;
   }
 }/*# sourceMappingURL=main.css.map */

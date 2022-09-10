@@ -1,5 +1,5 @@
 footer {
-    min-height: 40vh;
+    min-height: 20vh;
     z-index: 1;
     background: #555555;
 
@@ -60,11 +60,34 @@ footer {
 
     @media (max-width: 768px) {
         .footer-page {
-            
+            justify-content: center;
+            flex-direction: column;
 
             .left,
             .right {
                 width: 100% !important;
+            }
+
+            .left {
+                padding: 0;
+                .title {
+                    font-size: 22px;
+                    width: 240px;
+                    &::after {
+                        left: 85%;
+                    }
+                }
+                p {
+                    line-height: 16px;
+                }
+            }
+
+            .right {
+                margin-top: -100px;
+                gap: 20px;
+                img {
+                    width: 30px;
+                }
             }
         }
     }

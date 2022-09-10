@@ -28,46 +28,38 @@ export default function Footer() {
                             <p>{post.paragraph}</p>
                         </div>
                         <div className="right">
-                            <img
-                                onMouseMove={() => {
-                                setYoutubeShow(true)
-                                }}
-                                onMouseLeave={() => {
-                                    setYoutubeShow(false)
-                                }}
-                                src={!showYoutube ? post["youtube-light"] : post["youtube-orange"]}
-                                alt="youtube"
-                            />
-                            <img
-                                onMouseMove={() => {
-                                    setTelegramShow(true)
-                                }}
-                                onMouseLeave={() => {
-                                    setTelegramShow(false)
-                                }}
-                                src={!showTelegram ? post["telegram-light"] : post["telegram-orange"]}
-                                alt="telegram"
-                            />
-                            <img
-                                onMouseMove={() => {
-                                    setFacebookShow(true)
-                                }}
-                                onMouseLeave={() => {
-                                    setFacebookShow(false)
-                                }}
-                                src={!showFacebook ? post["facebook-light"] : post["facebook-orange"]}
-                                alt="facebook"
-                            />
-                            <img
-                                onMouseMove={() => {
-                                    setInstagramShow(true)
-                                }}
-                                onMouseLeave={() => {
-                                    setInstagramShow(false)
-                                }}
-                                src={!showInstagram ? post["instagram-light"] : post["instagram-orange"]}
-                                alt="instagram"
-                            />
+                            <a href={"?post__url=null"}>
+                                <img
+                                    onMouseMove={() => setYoutubeShow(true)}
+                                    onMouseLeave={() => setYoutubeShow(false)}
+                                    src={!showYoutube ? post["youtube-light"] : post["youtube-orange"]}
+                                    alt="youtube"
+                                />
+                            </a>
+                            <a href={"?post__url=null"}>
+                                <img
+                                    onMouseMove={() => setTelegramShow(true)}
+                                    onMouseLeave={() => setTelegramShow(false)}
+                                    src={!showTelegram ? post["telegram-light"] : post["telegram-orange"]}
+                                    alt="telegram"
+                                />
+                            </a>
+                            <a href={"?post__url=null"}>
+                                <img
+                                    onMouseMove={() => setFacebookShow(true)}
+                                    onMouseLeave={() => setFacebookShow(false)}
+                                    src={!showFacebook ? post["facebook-light"] : post["facebook-orange"]}
+                                    alt="facebook"
+                                />
+                            </a>
+                            <a href={"?post__url=null"}>
+                                <img
+                                    onMouseMove={() => setInstagramShow(true)}
+                                    onMouseLeave={() => setInstagramShow(false)}
+                                    src={!showInstagram ? post["instagram-light"] : post["instagram-orange"]}
+                                    alt="instagram"
+                                />
+                            </a>
                         </div>
                     </div>
                 ))}

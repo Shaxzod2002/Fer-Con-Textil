@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './main.css';
 import axios from "axios";
-import { GrLocation } from 'react-icons/gr';
+import { GrMapLocation } from 'react-icons/gr';
 import { FiPhoneCall } from 'react-icons/fi';
 import { TbTruckDelivery } from 'react-icons/tb';
 import Maps from "./Maps";
@@ -21,18 +21,18 @@ export default function Contacts() {
 
     return (
         <>
-            <div className="contact">
+            <div className="contact" id="contact">
                 {contacts.map((post) => (
-                    <div className="contact-page d-flex">
+                    <div className="contact-page">
                         <div className="left">
                             <h1 className="title-page">{post.title}</h1>
                             <div className="option">
                                 <div className="loaction d-flex align-items-center">
-                                    <GrLocation className="icon location-icon" />
+                                    <GrMapLocation className="icon location-icon" />
                                     <p>{post.location}</p>
                                 </div>
                                 <div className="phone d-flex align-items-center">
-                                    <FiPhoneCall className="icon " />
+                                    <FiPhoneCall className="icon number-icon" />
                                     <div className="phone__numbers">
                                         <p>{post.number1}</p>
                                         <p>{post.number2}</p>

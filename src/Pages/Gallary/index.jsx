@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import './main.css';
 import axios from "axios";
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
+import Example from "./Slider3D";
 const GallaryJson = "./jsons/gallary.json";
 
 export default function Gallary() {
@@ -19,15 +20,7 @@ export default function Gallary() {
         <>
             <div className="gallary">
                 <h1 className="title-page">Фотогалерея</h1>
-                <div className="prev"><IoIosArrowBack /></div>
-                <div className="next"><IoIosArrowForward /></div>
-                <div className="gallary-image">
-                    {gallary.map(post => (
-                        <div className="image">
-                            <img src={post.img} alt="error" />
-                        </div>
-                    ))}
-                </div>
+                <Example />
             </div>
         </>
     )

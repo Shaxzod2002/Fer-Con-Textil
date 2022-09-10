@@ -78,29 +78,8 @@
 }
 
 @media screen and (max-width: 767.9px) {
-  .partners .title {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 400px;
-    display: flex;
-    flex-direction: column-reverse;
-    margin: 50px 0;
-  }
-  .partners .title span {
-    position: relative;
-    top: -30px;
-    left: 0;
-    width: 26%;
-    height: 4px;
-    margin: 0;
-    padding: 0;
-  }
-  .partners .title h1 {
-    font-size: 22px !important;
-    margin-top: 0;
-    padding: 0;
-    text-align: center;
+  .partners .title-page {
+    margin: 40px 10%;
   }
   .partners .swiper-button-prev {
     width: 40px;

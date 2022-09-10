@@ -82,8 +82,25 @@ nav {
             width: 100%;
             padding: 30px 0;
             flex-direction: column;
+            transition: all .3s linear;
+            transform-origin: top;
             row-gap: 30px;
-            display: none;
+            margin-top: -100px;
+            display: flex;
+            transition: all .5s ease;
+            height: 0px;
+            overflow: hidden;
+            opacity: 0;
+            -webkit-transition: all .5s ease;
+            -moz-transition: all .5s ease;
+            -ms-transition: all .5s ease;
+            -o-transition: all .5s ease;
+        }
+
+        ul.active {
+            margin: 0;
+            height: 400px;
+            opacity: 1;
         }
     }
 }
