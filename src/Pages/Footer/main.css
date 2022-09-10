@@ -52,6 +52,9 @@ footer .footer-page .right img {
   cursor: pointer;
 }
 @media (max-width: 768px) {
+  footer {
+    min-height: 30vh !important;
+  }
   footer .footer-page {
     justify-content: center;
     flex-direction: column;

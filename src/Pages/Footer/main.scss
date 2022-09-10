@@ -59,6 +59,9 @@ footer {
     }
 
     @media (max-width: 768px) {
+        & {
+            min-height: 30vh !important;
+        }
         .footer-page {
             justify-content: center;
             flex-direction: column;

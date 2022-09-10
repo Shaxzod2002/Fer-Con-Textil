@@ -30,4 +30,9 @@
   .css-1qzevvg img:nth-child(2) {
     margin-right: -250%;
   }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .css-1fzpoyk img {
+    width: 500px;
+  }
 }/*# sourceMappingURL=main.css.map */

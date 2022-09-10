@@ -61,16 +61,18 @@
 
 @media (max-width: 768px) {
     .about {
-        margin: 50px 0;
-        min-height: 210vh;
+        padding: 20px 0;
+        min-height: 100vh;
         justify-content: center;
-        align-items: flex-end;
+        flex-direction: column;
 
         .about-gallary {
-            top: 0;
+            position: static;
         }
 
         .about-body {
+            margin: 0;
+            height: auto;
             flex-direction: column;
 
             .left {
@@ -86,6 +88,21 @@
                 height: 300px;
                 background-size: contain;
             }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .about {
+        padding: 20px 0;
+        min-height: 150vh;
+        flex-direction: column;
+        .about-gallary {
+            width: 100%;
+            position: static;
+        }
+        .about-body {
+            width: 100%;
         }
     }
 }
