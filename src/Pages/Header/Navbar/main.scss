@@ -40,6 +40,7 @@ nav {
             a {
                 transition: all .3s linear;
                 color: #fff;
+                font-size: 20px;
                 -webkit-transition: all .3s linear;
                 -moz-transition: all .3s linear;
                 -ms-transition: all .3s linear;
@@ -101,6 +102,18 @@ nav {
             margin: 0;
             height: 400px;
             opacity: 1;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    nav {
+        ul {
+            li {
+                 a {
+                    font-size: 16px;
+                 }
+            }
         }
     }
 }

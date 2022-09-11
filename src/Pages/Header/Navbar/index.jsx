@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import './main.css';
 import axios from "axios";
 import { FaBars, FaTimes } from 'react-icons/fa'
-import { Prev } from "react-bootstrap/esm/PageItem";
-import { click } from "@testing-library/user-event/dist/click";
 const NavbarJson = "./jsons/navbar.json";
 
 export default function Navbar() {

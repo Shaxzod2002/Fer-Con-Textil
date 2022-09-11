@@ -1,7 +1,8 @@
 {
-  "name": "my-app",
+  "name": "Fer Kon Tekstil",
   "version": "0.1.0",
   "private": true,
+  "author": "WebShoh Developer",
   "dependencies": {
     "@react-google-maps/api": "^2.12.2",
     "@testing-library/jest-dom": "^5.16.4",
