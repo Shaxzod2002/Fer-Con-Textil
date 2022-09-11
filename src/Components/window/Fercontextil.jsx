@@ -8,20 +8,15 @@ import Contacts from "../../Pages/Contacts";
 import Footer from "../../Pages/Footer";
 
 export default function Fercontextil() {
-    window.addEventListener('load', () => {
-        document.getElementById('box').style.display = "block";
-    })
     return (
         <>
-            <div id="box" style={{display: "none"}}>
-                <Header />
-                <About />
-                <Products />
-                <Gallary />
-                <Partnors />
-                <Contacts />
-                <Footer />
-            </div>
+            <Header />
+            <About />
+            <Products />
+            <Gallary />
+            <Partnors />
+            <Contacts />
+            <Footer />
         </>
     );
 }
