@@ -21,7 +21,7 @@ export default function Header() {
                 <div className="theme">
                     <Navbar />
                     {header.map((post) => (
-                        <div className="body">
+                        <div className="body" data-aos="zoom-in">
                             <h1 className="title">
                                 {post.title}
                             </h1>

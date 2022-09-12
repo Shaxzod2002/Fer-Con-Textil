@@ -20,6 +20,7 @@
 
 .container-fluid {
     font-family: sans-serif;
+    overflow: hidden;
 }
 
 .title-page {

@@ -20,22 +20,19 @@ export default function Products() {
                 <h1 className="title-page">Наши продукты</h1>
                 <div className="products-gallary">
                     {products.map((post) => (
-                        <div className="products-gallary-box">
+                        <div className="products-gallary-box" data-aos="zoom-in-up">
                             <div className="products-gallary-box-head">
                                 <img src={post.img} alt="image" />
                             </div>
                             <div className="products-gallary-box-body">
-                                <div className="top">
-
-                                </div>
+                                <div className="top"></div>
                                 <div className="bottom text-center">
                                     <h3 className="text">{post.text}</h3>
-                                    <a href="?tell=null" className="text-decoration-none">{post.order}</a>
+                                    <a href="tel:+99890 580 5878" className="text-decoration-none">{post.order}</a>
                                 </div>
                             </div>
                         </div>
                     ))}
-
                 </div>
             </div>
         </>

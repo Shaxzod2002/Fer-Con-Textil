@@ -22,7 +22,7 @@ export default function Footer() {
         <>
             <footer className="row">
                 {footer.map((post) => (
-                    <div className="footer-page">
+                    <div className="footer-page" data-aos="zoom-in-down">
                         <div className="left">
                             <h4 className="title">{post.title}</h4>
                             <p>{post.paragraph}</p>

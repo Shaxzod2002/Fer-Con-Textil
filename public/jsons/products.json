@@ -8,19 +8,19 @@
     },
     {
         "id": 2,
-        "text": "Гофрокартоны",
+        "text": "Бумажный конус",
         "order": "Заказать",
         "img": "./image/products/2.png"
     },
     {
         "id": 3,
-        "text": "Гофрокартоны",
+        "text": "Бумажный конус",
         "order": "Заказать",
         "img": "./image/products/3.png"
     },
     {
         "id": 4,
-        "text": "Гофрокартоны",
+        "text": "Бумажный рулон",
         "order": "Заказать",
         "img": "./image/products/4.png"
     }

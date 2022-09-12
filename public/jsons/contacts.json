@@ -2,11 +2,12 @@
     {
         "title": "Свяжитесь с нами",
         "locationLogo": "./image/contacts/location-logo.png",
-        "location": "Farg‘ona viloyati, Marg‘ilon shahar, Mustaqillik ko‘chasi, 65-uy",
-        "phoneLogo": "./image/contacts/phono-logo.png",
-        "number1": "+998 99 600 99 66",
-        "number2": "+998 99 900 99 66",
+        "location": "Ферганская обл. г. Фергана, ул. Шароф Рашидова, 1",
+        "phoneLogo": "./image/contacts/phone-logo.png",
+        "number1": "+99890 580 58 78",
+        "number2": "+99890 301 70 60",
+        "number3": "+99899 995 20 00",
         "deliveryLogo": "./image/contacts/delivery-logo.png",
-        "delivery": "Respublika bo‘yicha yetkazib berish xizmati mavjud!"
+        "delivery": "Договорная доставка по всему Узбекистану."
     }
 ]

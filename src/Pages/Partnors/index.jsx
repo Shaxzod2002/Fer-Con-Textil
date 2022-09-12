@@ -35,6 +35,7 @@ export default function Partnors() {
                             spaceBetween={50}
                             slidesPerView={3}
                             navigation
+                            data-aos="zoom-in-up"
                         >
                             <SwiperSlide className='partors-slide'>
                                 <img src={post.ruxsor} alt={post.ruxsorName} />
@@ -60,6 +61,7 @@ export default function Partnors() {
                             slidesPerView={1}
                             navigation
                             pagination={{ clickable: true }}
+                            data-aos="zoom-in-up"
                         >
                             <SwiperSlide className='partors-slide'>
                                 <img src={post.ruxsor} alt={post.ruxsorName} />
@@ -84,6 +86,7 @@ export default function Partnors() {
                             spaceBetween={20}
                             slidesPerView={2}
                             navigation
+                            data-aos="zoom-in-up"
                         >
                             <SwiperSlide className='partors-slide'>
                                 <img src={post.ruxsor} alt={post.ruxsorName} />

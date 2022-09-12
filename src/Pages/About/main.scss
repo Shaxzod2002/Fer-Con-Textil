@@ -64,7 +64,7 @@
         padding: 20px 0;
         min-height: 100vh;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: column-reverse;
 
         .about-gallary {
             position: static;
@@ -96,7 +96,7 @@
     .about {
         padding: 20px 0;
         min-height: 150vh;
-        flex-direction: column;
+        flex-direction: column-reverse;
         .about-gallary {
             width: 100%;
             position: static;

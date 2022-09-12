@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import './main.css';
 import axios from "axios";
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io'
 import Example from "./Slider3D";
 const GallaryJson = "./jsons/gallary.json";
 

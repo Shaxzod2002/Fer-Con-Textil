@@ -18,20 +18,18 @@ export default function About() {
         <>
             {about.map((post) => (
                 <div className="about" id="about">
-                    <div className="about-gallary">
+                    <div className="about-gallary" data-aos="zoom-in">
                         <img src={post.one} alt="Image" />
                         <img src={post.two} alt="Image" />
                         <img src={post.three} alt="Image" />
                     </div>
-                    <div className="about-body">
-                        <div className="left">
+                    <div className="about-body pt-5">
+                        <div className="left" data-aos="fade-right">
                             <h1 className="title-page">{post.title}</h1>
                             <p className="paragraph-one">{post.paragraph1}</p>
                             <p className="paragraph-two">{post.paragraph2}</p>
                         </div>
-                        <div className="right">
-
-                        </div>
+                        <div className="right" data-aos="fade-left"></div>
                     </div>
                 </div>
             ))}
