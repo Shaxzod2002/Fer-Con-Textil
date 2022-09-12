@@ -18,7 +18,7 @@
   max-width: 80%;
 }
 .about .about-body {
-  margin-top: 100px;
+  margin-top: 140px;
   width: 82%;
   display: flex;
   justify-content: space-between;
@@ -30,7 +30,6 @@
   margin-left: 15px;
 }
 .about .about-body .left p {
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 22.9038px;
@@ -93,6 +92,9 @@
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
+  .about-gallary {
+    margin-top: 50px;
+  }
   .about-body {
     margin: 500px 0 40px 0 !important;
   }

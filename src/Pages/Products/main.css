@@ -70,7 +70,6 @@
   align-items: center;
 }
 .products .products-gallary .products-gallary-box-body .bottom .text {
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -88,7 +87,6 @@
   border-radius: 5px;
   border: 1px solid #8B8B8B;
   border-radius: 5px;
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 17px;

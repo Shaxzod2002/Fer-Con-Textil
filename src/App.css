@@ -16,10 +16,10 @@
 
 * {
     scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container-fluid {
-    font-family: sans-serif;
     overflow: hidden;
 }
 

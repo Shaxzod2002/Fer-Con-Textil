@@ -14,26 +14,17 @@ footer .footer-page .left {
   justify-content: center;
   align-items: center;
 }
-footer .footer-page .left .title {
-  position: relative;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 26.1153px;
-  line-height: 108.5%;
-  color: #FFFFFF;
-}
-footer .footer-page .left .title::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 80%;
-  background-color: #fff;
-  width: 3px;
-  height: 100%;
+footer .footer-page .left img {
+  margin: 0 10px 0 -10px;
+  width: 60px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 footer .footer-page .left p {
-  font-family: "Poppins";
+  margin-top: 20px;
   font-style: normal;
   font-weight: 500;
   font-size: 15.6725px;
@@ -48,8 +39,15 @@ footer .footer-page .right {
   justify-content: center;
   align-items: center;
 }
-footer .footer-page .right img {
+footer .footer-page .right a {
+  font-size: 60px;
+  color: #FFFFFF;
+}
+footer .footer-page .right a img {
   cursor: pointer;
+}
+footer .footer-page .right a:hover {
+  color: #FF7D4E;
 }
 @media (max-width: 768px) {
   footer {
@@ -64,23 +62,19 @@ footer .footer-page .right {
     width: 100% !important;
   }
   footer .footer-page .left {
-    padding: 0;
-  }
-  footer .footer-page .left .title {
-    font-size: 22px;
-    width: 240px;
-  }
-  footer .footer-page .left .title::after {
-    left: 85%;
+    padding: 0 0 0 20px;
   }
   footer .footer-page .left p {
     line-height: 16px;
   }
   footer .footer-page .right {
-    margin-top: -100px;
+    margin-top: -70px;
     gap: 20px;
   }
-  footer .footer-page .right img {
+  footer .footer-page .right a {
+    font-size: 30px;
+  }
+  footer .footer-page .right a img {
     width: 30px;
   }
 }/*# sourceMappingURL=main.css.map */

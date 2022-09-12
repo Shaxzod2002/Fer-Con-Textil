@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import './main.css';
 import axios from "axios";
-import { FaBars, FaTimes } from 'react-icons/fa'
+import { FaBars, FaTimes } from 'react-icons/fa';
+import FerKonLogo from '../../../Components/image/logo.png';
 const NavbarJson = "./jsons/navbar.json";
 
 export default function Navbar() {
@@ -31,7 +32,7 @@ export default function Navbar() {
             <div className="row">
                 <nav className="d-flex">
                     <div className="brand d-flex justify-content-center align-items-center text-light">
-                        <h5 className="title">Fer Kon <br /> Textile</h5>
+                        <img src={FerKonLogo} alt="Ferkon" />
                         <div onClick={showBars} >
                             {!bars ? <FaBars className="bars-icon" id="bars" /> : <FaTimes className="bars-icon" id="bars" />}
                         </div>
@@ -50,7 +51,6 @@ export default function Navbar() {
                                 </a>
                             </li>
                         ))}
-
                     </ul>
                 </nav>
             </div>

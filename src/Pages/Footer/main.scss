@@ -14,28 +14,18 @@ footer {
             justify-content: center;
             align-items: center;
 
-            .title {
-                position: relative;
-                font-family: 'Poppins';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 26.1153px;
-                line-height: 108.5%;
-                color: #FFFFFF;
-
-                &::after {
-                    position: absolute;
-                    content: '';
-                    top: 0;
-                    left: 80%;
-                    background-color: #fff;
-                    width: 3px;
-                    height: 100%;
-                }
+            img {
+                margin: 0 10px 0 -10px;
+                width: 60px;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
             }
 
             p {
-                font-family: 'Poppins';
+                margin-top: 20px;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 15.6725px;
@@ -52,8 +42,17 @@ footer {
             justify-content: center;
             align-items: center;
 
-            img {
-                cursor: pointer;
+            a {
+                font-size: 60px;
+                color: #FFFFFF;
+
+                img {
+                    cursor: pointer;
+                }
+
+                &:hover {
+                    color: #FF7D4E;
+                }
             }
         }
     }
@@ -62,6 +61,7 @@ footer {
         & {
             min-height: 30vh !important;
         }
+
         .footer-page {
             justify-content: center;
             flex-direction: column;
@@ -72,24 +72,23 @@ footer {
             }
 
             .left {
-                padding: 0;
-                .title {
-                    font-size: 22px;
-                    width: 240px;
-                    &::after {
-                        left: 85%;
-                    }
-                }
+                padding: 0 0 0 20px;
+
                 p {
                     line-height: 16px;
                 }
             }
 
             .right {
-                margin-top: -100px;
+                margin-top: -70px;
                 gap: 20px;
-                img {
-                    width: 30px;
+
+                a {
+                    font-size: 30px;
+
+                    img {
+                        width: 30px;
+                    }
                 }
             }
         }
