@@ -38,7 +38,7 @@ export default function Footer() {
                                     alt="youtube"
                                 />
                             </a> */}
-                            <a href={"?post__url=null"}>
+                            <a href={"https://t.me/Muxammad78"}>
                                 <img
                                     onMouseMove={() => setTelegramShow(true)}
                                     onMouseLeave={() => setTelegramShow(false)}
@@ -62,7 +62,7 @@ export default function Footer() {
                                     alt="instagram"
                                 />
                             </a> */}
-                            <a href="mailto:ferkonuz@gmail.com">
+                            <a href="mailto:ferkon2001@mail.ru">
                                 <MdOutlineMailOutline />
                             </a>
                         </div>
