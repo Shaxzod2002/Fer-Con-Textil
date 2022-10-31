@@ -24,9 +24,9 @@ export default function NavbarPhone() {
         <div className="right">
           {contacts.map((post) => (
             <div className="phone">
-              <a href={`tell:${post.number1}`}>{post.number1}</a>
-              <a href={`tell:${post.number2}`}>{post.number2}</a>
-              <a href={`tell:${post.number3}`}>{post.number3}</a>
+              <a href={`tel:${post.number1}`}>{post.number1}</a>
+              <a href={`tel:${post.number2}`}>{post.number2}</a>
+              <a href={`tel:${post.number3}`}>{post.number3}</a>
             </div>
           ))}
         </div>

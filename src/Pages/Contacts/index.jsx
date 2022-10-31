@@ -37,9 +37,9 @@ export default function Contacts() {
                                         <img src={post.phoneLogo} alt="phone logo" />
                                     </div>
                                     <div className="paragraph">
-                                        <a href={`tell:${post.number1}`}>{post.number1}</a>
-                                        <a href={`tell:${post.number2}`}>{post.number2}</a>
-                                        <a href={`tell:${post.number3}`}>{post.number3}</a>
+                                        <a href={`tel:${post.number1}`}>{post.number1}</a>
+                                        <a href={`tel:${post.number2}`}>{post.number2}</a>
+                                        <a href={`tel:${post.number3}`}>{post.number3}</a>
                                     </div>
                                 </div>
                                 <div className="delivery option-box d-flex align-items-center">
