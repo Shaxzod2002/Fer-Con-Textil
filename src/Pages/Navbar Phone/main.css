@@ -1,0 +1,47 @@
+.navbar-phone {
+  height: auto;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.714);
+}
+
+.navbar-phone :where(.left, .right) {
+  width: 50%;
+  min-height: 40px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.navbar-phone .right .phone {
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  justify-content: space-evenly;
+}
+
+.navbar-phone .right a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-phone {
+    flex-direction: column;
+  }
+  .navbar-phone :where(.left, .right) {
+    width: 100%;
+  }
+
+  .navbar-phone .left {
+    justify-content: center;
+  }
+
+  .navbar-phone .right {
+    justify-content: center;
+  }
+}

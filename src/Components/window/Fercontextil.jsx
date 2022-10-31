@@ -6,10 +6,12 @@ import Gallary from "../../Pages/Gallary";
 import Partnors from "../../Pages/Partnors";
 import Contacts from "../../Pages/Contacts";
 import Footer from "../../Pages/Footer";
+import NavbarPhone from '../../Pages/Navbar Phone';
 
 export default function Fercontextil() {
     return (
         <>
+            <NavbarPhone />
             <Header />
             <About />
             <Products />
